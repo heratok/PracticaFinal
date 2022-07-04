@@ -13,7 +13,7 @@ public class ImpArchivoTexto implements IPublicacionDao{
     private Scanner modoLectura;
     
     public ImpArchivoTexto(){
-        this("Registro.os   ");
+        this("Registro.txt");
     }
     public ImpArchivoTexto(String ruta){
         this.archivo=new File(ruta);
@@ -131,7 +131,7 @@ public class ImpArchivoTexto implements IPublicacionDao{
     @Override
     public Publicacion eliminarPublicacion(Publicacion p)throws ExcepcionArchivo{
         Publicacion eliminado=null;
-        ImpArchivoTexto archivoTmp=new ImpArchivoTexto("Registro.tmp");
+        ImpArchivoTexto archivoTmp=new ImpArchivoTexto("Registro.txt");
         try {
             this.modoLectura=new Scanner(this.archivo);
             while(this.modoLectura.hasNext()){

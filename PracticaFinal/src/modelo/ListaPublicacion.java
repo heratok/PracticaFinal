@@ -11,7 +11,7 @@ public class ListaPublicacion implements IPublicacionDao {
     private IPublicacionDao registroPublicaciones;
 
     public ListaPublicacion() {
-        //this.registroPublicaciones = new ImpArchivoTexto();
+        this.registroPublicaciones = new ImpArchivoTexto();
         this.registroPublicaciones=new ImpArchivoObjeto();
     }
     
